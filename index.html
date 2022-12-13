@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ddf753ba54.js" crossorigin="anonymous"></script>
+  <title>Loja Virtual</title>
+</head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+          <img src="Imagens/Logo.jpg" alt="icone do site scola de compra" class="img" />
+          <span class="text-uppercase fw-lighter ms-2">Beauty Salon</span>
+        </a>
+
+        <div class="order-lg-2 nav-btns">
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-search"></i>
+          </button>
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">4</span>
+          </button>
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-heart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">2</span>
+          </button>
+          <button type="button" class="btn position-relative">
+            <i class="fa-sharp fa-solid fa-bell"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">1</span>
+          </button>
+        </div>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item px-2 py-2">
+              <a href="#header" class="nav-link text-uppercase text-dark">Home</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="#produtos" class="nav-link text-uppercase text-dark">Produtos</a>
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a href="#quem-somos" class="nav-link text-uppercase text-dark">Quem Somos</a>
+            </li>
+            <li class="nav-item px-2 py-2 border-0">
+              <a href="#nosso-time" class="nav-link text-uppercase text-dark">Nosso Time</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://areademulher.r7.com/wp-content/uploads/2020/11/como-aumentar-os-olhos-8-super-dicas-para-fazer-com-maquiagem-1200x675.png"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Indica uma amiga</h2>
+            <h1>concorra a uma maquiagem completa.</h1>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://i.ytimg.com/vi/_JoRRHvivI0/maxresdefault.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Realce a sua beleza</h2>
+            <h1>Maquiagem a partir</h1>
+            <h3>R$90.00</h3>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://blog.belezademulher.com.br/wp-content/uploads/2020/08/Como-engrossar-o-cabelo-opt-1200x675.jpg"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Mega promoção</h2>
+            <h1>Hidratação + pé e mão com 20% OFF.</h1>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Produtos -->
+    <section class="container-fluid bg-light text-center p-3" id="produtos">
+      <div class="container">
+        <div class="title text-center">
+          <h2> Nossos Produtos</h2>
+        </div>
+      </div>
+      <div class="lista-produtos mt-4 row gx-0 gy-3">
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="produtos-img position-relative text-center">
+            <img src="Imagens/produtos/maquiagem.jpeg" class="w-75" alt="" />
+            <span class="position-absolute bg-danger text-white d">
+              <p class="mt-0 mb-0 fs-6">33%</p>
+            </span>
+          </div>
+          <div class="text-center">
+            <div class="classificacao mt-3">
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">Maquiagem Completa</p>
+            <span class="fw-bold">R$ 140,00</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="produtos-img position-relative text-center">
+            <img src="Imagens/produtos/penteado.jpeg" class="w-75" alt="" />
+            <span class="position-absolute bg-danger text-white d">
+              <p class="mt-0 mb-0 fs-6">14%</p>
+            </span>
+          </div>
+          <div class="text-center">
+            <div class="classificacao mt-3">
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">Penteado longo Solto</p>
+            <span class="fw-bold">R$ 80,00</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="produtos-img position-relative text-center">
+            <img src="Imagens//produtos/make.jpg" class="w-75" alt="" />
+            <span class="position-absolute bg-danger text-white d">
+              <p class="mt-0 mb-0 fs-6">20%</p>
+            </span>
+          </div>
+          <div class="text-center">
+            <div class="classificacao mt-3">
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">Maquiagem de Festa</p>
+            <span class="fw-bold">R$ 120,00</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="produtos-img position-relative text-center">
+            <img src="Imagens/produtos/cabelo curto.jpg" class="w-75" alt="" />
+            <span class="position-absolute bg-danger text-white d">
+              <p class="mt-0 mb-0 fs-6">15%</p>
+            </span>
+          </div>
+          <div class="text-center">
+            <div class="classificacao mt-3">
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">Penteado Preso</p>
+            <span class="fw-bold">R$ 100,00</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="produtos-img position-relative text-center">
+            <img src="Imagens/produtos/mao_delicada.jpg" class="w-75" alt="" />
+            <span class="position-absolute bg-danger text-white d">
+              <p class="mt-0 mb-0 fs-6">8%</p>
+            </span>
+          </div>
+          <div class="text-center">
+            <div class="classificacao mt-3">
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">delicada</p>
+            <span class="fw-bold">R$ 45,00</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="produtos-img position-relative text-center">
+            <img src="Imagens/produtos/Purple-Ombre-Nail.jpg" class="w-75" alt="" />
+            <span class="position-absolute bg-danger text-white d">
+              <p class="mt-0 mb-0 fs-6">5%</p>
+            </span>
+          </div>
+          <div class="text-center">
+            <div class="classificacao mt-3">
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">
+              Dark purple</p>
+            <span class="fw-bold">R$ 54,90</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="produtos-img position-relative text-center">
+            <img src="Imagens/produtos/francesinha.jpeg" class="w-75" alt="" />
+            <span class="position-absolute bg-danger text-white d">
+              <p class="mt-0 mb-0 fs-6">5%</p>
+            </span>
+          </div>
+          <div class="text-center">
+            <div class="classificacao mt-3">
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">Clássico</p>
+            <span class="fw-bold">R$ 50,00</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="produtos-img position-relative text-center">
+            <img src="Imagens/produtos/pes_feito.jpg" class="w-75" alt="" />
+            <span class="position-absolute bg-danger text-white d">
+              <p class="mt-0 mb-0 fs-6">10%</p>
+            </span>
+          </div>
+          <div class="text-center">
+            <div class="classificacao mt-3">
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+              <span class="text-warning"><i class="fas fa-star"></i></span>
+            </div>
+            <p class="text-capitalize my-1">Roxo Brilhante</p>
+            <span class="fw-bold">R$ 60,00</span>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Quem somos -->
+    <section id="quem-somos" class="py-5">
+      <div class="container">
+        <div class="row gy-lg-5 align-items-center">
+          <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+            <div class="title pt-3 pb-5">
+              <h2 class="position-relative d-inline-block ms-4">Quem Somos</h2>
+            </div>
+            <p>Conforto e bom atendimento em nosso espaços !</p>
+            <p>
+              Oferecemos serviços que lhe proporcionam cuidados da cabeça aos pés. Contamos com uma equipe especialistas
+              que poderão lhe orientar em quais são as melhores opções para realizar seus desejos, cuidados com o corpo
+              ou uma mudança no visual.
+              Agende uma avaliação gratuita e personalizada que lhe ajudaremos a descobrir o melhor tratamento ao que
+              você deseja.
+              <br><br>
+              <a href="" class="link">Conheça nossos serviços &raquo;</a>
+            </p>
+          </div>
+          <div class="col-lg-6 order-lg-0">
+            <img
+              src="https://images.adsttc.com/media/images/6013/8f1b/f91c/8196/0900/032c/large_jpg/Roby_Salao_Beleza-3801.jpg?1611894546"
+              alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- nosso time -->
+    <section id="nosso-time" class="team mb-5 text-center bg-light">
+      <div class="container">
+        <div class="section-header">
+          <div class="title text-center py-5">
+            <h2 class="position-relative d-inline-block">Nosso Time</h2>
+          </div>
+          <p>Nosso time de profissionais apaixonados pelo o que fazem!</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="member">
+              <img src="Imagens/Marketing.jpg" class="img-fluid rounded-circle" alt="" />
+              <h4>Tatiana </h4>
+              <span>Marketing</span>
+              <div class="social">
+                <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="member">
+              <img src="Imagens/maquiadora.jpg" class="img-fluid rounded-circle" alt="" />
+              <h4>Luana Mello</h4>
+              <span>Maquiadora</span>
+              <div class="social">
+                <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="member">
+              <img src="Imagens/Manicure.jpg" class="img-fluid rounded-circle" alt="" />
+              <h4>Ana Luiza</h4>
+              <span>Manicure</span>
+              <div class="social">
+                <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="member">
+              <img src="Imagens/Cabeleleiro.jpg" class="img-fluid rounded-circle" alt="" />
+              <h4>Rafael Garcia</h4>
+              <span>Cabeleleiro</span>
+              <div class="social">
+                <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé-->
+    <footer class="bg-dark py-5">
+      <footer class="container-fluid bg-dark p-5 fst-italic">
+        <div class="container">
+          <div class="row text-white g-4">
+            <div class="col-md-6 col-lg-3 ">
+              <h5 class="fw-light">Links</h5>
+              <ul class="list-unstyled">
+                <li class="my-3">
+                  <a href="index.html" class="text-white text-decoration-none text-muted">
+                    <i class="fas fa-chevron-right me-1"></i> Home
+                  </a>
+                </li>
+                <li class="my-3">
+                  <a href="#produtos" class="text-white text-decoration-none text-muted">
+                    <i class="fas fa-chevron-right me-1"></i> Produtos
+                  </a>
+                </li>
+                <li class="my-3">
+                  <a href="#quem-somos" class="text-white text-decoration-none text-muted">
+                    <i class="fas fa-chevron-right me-1"></i> Quem Somos
+                  </a>
+                </li>
+                <li class="my-3">
+                  <a href="#nosso-time" class="text-white text-decoration-none text-muted">
+                    <i class="fas fa-chevron-right me-1"></i> Nosso Time
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h5 class="fw-light mb-3">Contato</h5>
+              <div class="d-flex justify-content-start align-items-start my-2 text-muted ">
+                <span class="me-3">
+                  <i class="fas fa-map-marked-alt"></i>
+                </span>
+                <span class="fw-light">Avenida Wenceslau Braz,1413 -
+                  Itapecerica da Serra - SP, 18213-170</span>
+              </div>
+              <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                <span class="me-3">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <span class="fw-light">salon&feminina@gmail.com</span>
+              </div>
+              <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                <span class="me-3">
+                  <i class="fas fa-phone-alt"></i>
+                </span>
+                <span class="fw-light"> +55 (47) 3547-8794</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 ">
+              <h5 class="fw-light mb-3 ">Redes Sociais</h5>
+              <div>
+                <ul class="list-unstyled d-flex">
+                  <li>
+                    <a href="https://www.linkedin.com/in/anne-caroline-607460185"
+                      class="text-white text-decoration-none text-muted fs-4 me-4" target="_blank">
+                      <i class="bi bi-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/AnneRamos910"
+                      class="text-white text-decoration-none text-muted fs-4 me-4" target="_blank">
+                      <i class="bi bi-github"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/anne_ramos910"
+                      class="text-white text-decoration-none text-muted fs-4 me-4" target="_blank">
+                      <i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/" class="text-white text-decoration-none text-muted fs-4 me-4"
+                      target="_blank">
+                      <i class="bi bi-facebook"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <p>Desenvolvido por Anne Ramos</p>
+  </body>
+<html>

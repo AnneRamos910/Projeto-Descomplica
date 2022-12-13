@@ -1,0 +1,136 @@
+ @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kanit:ital,wght@0,100;1,300&display=swap');
+
+ /* NavBar */
+ .navbar {
+    box-shadow: 0 3px 9px 3px rgba(232, 126, 203, 0.93);
+ }
+
+ .navbar-brand img {
+    width: 50px;
+ }
+
+ .navbar-brand span {
+    letter-spacing: 5px;
+ }
+
+ .nav-link:hover {
+    color: var(--pink) !important;
+ }
+
+ .home .carousel-item p {
+    font-size: 50px;
+    margin: 0;
+    color: #eeeeee;
+    opacity: 0;
+ }
+
+ .carousel-image {
+    height: 10vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+
+ .carousel-inner h1 {
+    font-size: 60px;
+    font-family: 'Fjalla One', sans-serif;
+ }
+
+ /*produtos*/
+ .lista-produtos span {
+    top: -1%;
+    right: 71%;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+ }
+
+ /* Quem Somos */
+ #quem-somos {
+    background-color: rgb(246, 189, 231);
+ }
+
+ #quem-somos p {
+    font-size: 20px;
+    color: rgb(3, 3, 53);
+ }
+
+ #quem-somos .img-fluid {
+    border-radius: 100%;
+    overflow: hidden;
+ }
+
+ /* Nosso Time */
+ .team .member {
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+ }
+
+ .team .member img {
+    border-radius: 100%;
+    overflow: hidden;
+ }
+
+ .team .member h4 {
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    font-size: 20px;
+ }
+
+ .team .member span {
+     font-size: 20px;
+ }
+
+ .team .member p {
+    padding-top: 10px;
+    font-size: 14px;
+ }
+
+ .team p {
+    color: rgb(3, 3, 53);
+    font-size: 20px;
+ }
+
+ .team .member .social {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .team .member .social a {
+    color: rgb(0, 0, 1.5);
+    transition: 0.3s;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .team .member .social i {
+    font-size: 25px;
+    margin: 0 2px;
+ }
+
+ footer p {
+    color: #eb66a6;
+    align-items: center;
+ }
+
+ /* media queries */
+ @media (min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+ }
+
+ @media (max-width: 512px) {
+    .carousel-inner h1 {
+        font-size: 38px;
+    }
+ }
